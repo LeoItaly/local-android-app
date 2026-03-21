@@ -1,0 +1,3 @@
+interface:
+  display_name: "Expo Android Local First App"
+  short_description: "Build a first Expo Android app and install a local standalone APK."
