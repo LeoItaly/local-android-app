@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./workflow-banner.png" alt="From zero to your own Android app — workflow banner" width="100%" style="border-radius:16px" />
+<img src="./android-pipeline.png" alt="From zero to your own Android app — workflow banner" width="100%" style="border-radius:16px" />
 
 <br/>
 
