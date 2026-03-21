@@ -3,6 +3,7 @@
 Build and update a local Android app on **Windows + Android** using **Expo**, **Android Studio**, and a chat-enabled IDE that can read the repository and follow step-by-step skill files.
 
 This repository is designed for people who want to:
+
 - create their **first local Android app**
 - install it on their **own Android phone**
 - avoid the Play Store
@@ -14,6 +15,7 @@ This repository is designed for people who want to:
 This repository is for users who already have the basic environment installed and want a guided, repeatable workflow.
 
 Typical setup:
+
 - Windows PC
 - Android phone with USB debugging enabled
 - Android Studio installed
@@ -81,6 +83,7 @@ If anything in that file is missing, complete it first.
 Use an IDE or coding agent that can read the repository files directly.
 
 The workflow assumes the agent can:
+
 - read markdown files in the repo
 - follow step-by-step instructions
 - stop after failed checks
@@ -96,6 +99,7 @@ Open:
 Paste that prompt into your IDE chat.
 
 That prompt tells the agent to:
+
 - find the requirements file
 - find both skill folders
 - verify prerequisites
@@ -111,6 +115,7 @@ The agent should use:
 `expo-android-local-first-app/SKILL.md`
 
 That workflow covers:
+
 - verifying the Android device connection
 - creating the Expo project
 - running the app locally
@@ -125,6 +130,7 @@ Once the app already exists on the phone, use:
 `android-local-app-update/SKILL.md`
 
 That workflow covers:
+
 - changing the app code
 - bumping version values
 - rebuilding the signed release APK
@@ -151,32 +157,9 @@ If you are new, use this order:
 ## Troubleshooting
 
 If something fails:
+
 - check the `references/` troubleshooting files inside each skill folder
 - re-run the test for the current step
 - only continue after the test passes
 
 Do not skip failed steps. The skills are written to pause, test, fix, and continue.
-
-## Suggested cleanup for publishing this repo
-
-Before publishing, make sure:
-- file names use a clean format such as lowercase with hyphens
-- no personal paths are stored in the markdown files
-- no passwords, keystores, or local secrets are committed
-- no generated APKs are committed unless you intentionally want to share them
-- the repository contains only reusable instructions and safe examples
-
-## Suggested file naming
-
-For a cleaner public repo, these names are recommended:
-
-- `First prompt.md` -> `first-prompt.md`
-- keep `requirements-for-local-android-skills.md`
-- keep `expo-android-local-first-app/`
-- keep `android-local-app-update/`
-
-## License
-
-Add a license before publishing publicly.
-
-A permissive option such as MIT is a simple default if you want others to reuse the repository.
