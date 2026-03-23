@@ -143,11 +143,24 @@ Test gate:
 - The install ends with success.
 - The existing installed app is replaced by the updated build.
 
-If install fails with incompatible signatures:
-- The old installed app was signed with a different key.
-- Uninstall the old app from the device.
-- Reinstall the new APK.
-- Warn that local app data may be removed when uninstalling.
+If install fails with `INSTALL_FAILED_UPDATE_INCOMPATIBLE` (incompatible signatures):
+- The old installed app was signed with a different key (e.g. a previous debug or Expo Go build).
+- Automatically run the uninstall + reinstall sequence without asking:
+
+PowerShell:
+```powershell
+adb uninstall <package-name>
+adb install app-release.apk
+```
+
+Shell:
+```bash
+adb uninstall <package-name>
+adb install app-release.apk
+```
+
+- Warn the user that local app data was removed by the uninstall.
+- After reinstall, continue to Step 7.
 
 ## Step 7: Verify the updated standalone app works without the dev server
 
