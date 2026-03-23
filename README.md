@@ -13,7 +13,6 @@
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square&logo=windows)
 ![Android](https://img.shields.io/badge/target-Android-3DDC84?style=flat-square&logo=android)
 ![Framework](https://img.shields.io/badge/framework-Expo%20%2F%20React%20Native-000020?style=flat-square&logo=expo)
-![No Store](https://img.shields.io/badge/store-not%20required-FF6B35?style=flat-square)
 ![AI](https://img.shields.io/badge/agent-Claude%20Code-CC785C?style=flat-square)
 
 </div>
